@@ -1,0 +1,401 @@
+@keyframes scale {0% {transform: scale(0.3);} 50% {transform: scale(1);} 100% {transform: scale(0.3);}}
+@keyframes eduScale {0% {transform: scale(0.8);} 50% {transform: scale(1);} 100% {transform: scale(0.8);}}
+@keyframes energyScale {0% {transform: scale(0.7);} 50% {transform: scale(1);} 100% {transform: scale(0.7);}}
+@keyframes medicalScale {0% {transform: scale(0.7);} 50% {transform: scale(1);} 100% {transform: scale(0.7);}}
+@keyframes railwayScale {0% {transform: scale(0.8);} 50% {transform: scale(1);} 100% {transform: scale(0.8);}}
+
+@media screen and (min-height: 1080px) {
+  @keyframes animX {0% {top: -16px;} 100% {top: 664px;}}
+  @keyframes animY {0% {left: 2px;} 100% {left: 300px;}}
+  @keyframes animHX {0% {top: -16px;} 100% {top: 284px;}}
+  @keyframes animHY {0% {left: -16px;} 100% {left: 664px;}}
+  @keyframes animX3 {0% {top: -16px;} 100% {top: 664px;}}
+  @keyframes animY3 {0% {left: -16px;} 100% {left: 284px;}}
+  @keyframes animX4 {0% {top: -16px;} 100% {top: 664px;}}
+  @keyframes animY4 {0% {left: -16px;} 100% {left: 284px;}}
+  .login {
+    & img.earthVague {
+      width: 100%;
+      height: 100%;
+    }
+    .loginMap {
+      & img.earth {
+        position: absolute;
+        top: 23.7%;
+        left: 18.1%;
+        width: (680/1920)*100%;
+        height: (680/1080)*100%;
+      }
+      & img.vague {
+        position: absolute;
+        z-index: 1000;
+      }
+      & img.edu {
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%,-14%);
+        animation: eduScale 4s linear 0s infinite alternate;
+      }
+      & img.energy {
+        top: 49%;
+        left: 50.5%;
+        transform: translate(-48%,-49.5%);
+        animation: energyScale 5s linear 0s infinite alternate;
+      }
+      & img.medical {
+        top: 67%;
+        left: 32%;
+        transform: translate(-69%,-31%);
+        animation: medicalScale 4s linear 0s infinite alternate;
+      }
+      & img.railway {
+        top: 26.5%;
+        left: 38%;
+        transform: translate(-24.2%,-37%);
+        animation: railwayScale 5s linear 0s infinite alternate;
+      }
+      .ellipse {
+        position: absolute;
+        & img {
+          position: absolute;
+        }
+      }
+      .ellipse1 {
+        top: 23.7%;
+        left: 27.1%;
+        width: 15.625%;
+        height: 62.96296296%;
+        /*background: rgba(0,0,0,0.5);*/
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse2 {
+        top: 41.3%;
+        left: 18.1%;
+        width: (680/1920)*100%;
+        height: (300/1080)*100%;
+        /*background: rgba(30, 205, 59, 0.5);*/
+        transform: rotate(180deg);
+        & img {
+          animation: animHX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animHY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse3 {
+        top: 23.6%;
+        left: 28%;
+        width: (300/1920)*100%;
+        height: (680/1080)*100%;
+        /*background: rgba(24, 100, 255, 0.5);*/
+        transform: rotate(225deg);
+        & img {
+          animation: animX3 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY3 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse4 {
+        top: 23.6%;
+        left: 28%;
+        width: (300/1920)*100%;
+        height: (680/1080)*100%;
+        /*background: rgba(40, 176, 255, 0.5);*/
+        transform: rotate(-45deg);
+        & img {
+          animation: animX4 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY4 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+    }
+    .loginMain {
+      top: 30%;
+      left: 1300px;
+    }
+  }
+}
+@media (max-height: 1079px) and (min-height: 900px) {
+  @keyframes animX {0% {top: -16px;} 100% {top: 584px;}}
+  @keyframes animY {0% {left: -16px;} 100% {left: 247px;}}
+  .login {
+    .loginMap {
+      & img.earthVague {
+        width: 1372px;
+      }
+      & img.earth {
+        position: absolute;
+        top: 200px;
+        left: 330px;
+        width: 600px;
+        height: 600px;
+      }
+      & img.vague {
+        position: absolute;
+        z-index: 1000;
+        width: 110px;
+      }
+      & img.edu {
+        top: 450px;
+        left: 280px;
+        animation: eduScale 4s linear 0s infinite alternate;
+      }
+      & img.energy {
+        top: 450px;
+        left: 870px;
+        animation: energyScale 5s linear 0s infinite alternate;
+      }
+      & img.medical {
+        top: 625px;
+        left: 570px;
+        animation: medicalScale 4s linear 0s infinite alternate;
+      }
+      & img.railway {
+        top: 240px;
+        left: 665px;
+        animation: railwayScale 5s linear 0s infinite alternate;
+      }
+      .ellipse {
+        position: absolute;
+        top: 200px;
+        left: 500px;
+        width: 263px;
+        height: 600px;
+        & img {
+          position: absolute;
+        }
+      }
+      .ellipse1 {
+        // background: rgba(0,0,0,0.5);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse2 {
+        // background: rgba(30, 205, 59, 0.5);
+        transform: rotate(90deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse3 {
+        // background: rgba(24, 100, 255, 0.5);
+        transform: rotate(225deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse4 {
+        // background: rgba(40, 176, 255, 0.5);
+        transform: rotate(-45deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+    }
+    .loginMain {
+      top: 25%;
+      left: 1250px;
+    }
+  }
+}
+@media (max-height: 899px) and (min-height: 759px) {
+  @keyframes animX {0% {top: -16px;} 100% {top: 534px;}}
+  @keyframes animY {0% {left: -16px;} 100% {left: 229px;}}
+  .login {
+    .loginMap {
+      & img.earthVague {
+        width: 1125px;
+      }
+      & img.earth {
+        position: absolute;
+        top: 140px;
+        left: 280px;
+        width: 550px;
+        height: 550px;
+      }
+      & img.vague {
+        position: absolute;
+        z-index: 1000;
+        width: 90px;
+      }
+      & img.edu {
+        top: 370px;
+        left: 240px;
+        animation: eduScale 4s linear 0s infinite alternate;
+      }
+      & img.energy {
+        top: 370px;
+        left: 780px;
+        animation: energyScale 5s linear 0s infinite alternate;
+      }
+      & img.medical {
+        top: 530px;
+        left: 510px;
+        animation: medicalScale 4s linear 0s infinite alternate;
+      }
+      & img.railway {
+        top: 180px;
+        left: 590px;
+        animation: railwayScale 5s linear 0s infinite alternate;
+      }
+      .ellipse {
+        position: absolute;
+        top: 140px;
+        left: 432px;
+        width: 245px;
+        height: 550px;
+        & img {
+          position: absolute;
+        }
+      }
+      .ellipse1 {
+         //background: rgba(0,0,0,0.5);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse2 {
+        // background: rgba(30, 205, 59, 0.5);
+        transform: rotate(90deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse3 {
+        // background: rgba(24, 100, 255, 0.5);
+        transform: rotate(225deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse4 {
+        // background: rgba(40, 176, 255, 0.5);
+        transform: rotate(-45deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+    }
+    .loginMain {
+      top: 25%;
+      left: 1050px;
+    }
+  }
+}
+@media (max-height: 760px) {
+  @keyframes animX {0% {top: -16px;} 100% {top: 434px;}}
+  @keyframes animY {0% {left: -16px;} 100% {left: 184px;}}
+  .login {
+    .loginMap {
+      & img.earthVague {
+        width: 970px;
+      }
+      & img.earth {
+        position: absolute;
+        top: 140px;
+        left: 230px;
+        width: 450px;
+        height: 450px;
+      }
+      & img.vague {
+        position: absolute;
+        z-index: 1000;
+        width: 80px;
+      }
+      & img.edu {
+        top: 330px;
+        left: 190px;
+        animation: eduScale 4s linear 0s infinite alternate;
+      }
+      & img.energy {
+        top: 320px;
+        left: 640px;
+        animation: energyScale 5s linear 0s infinite alternate;
+      }
+      & img.medical {
+        top: 460px;
+        left: 415px;
+        animation: medicalScale 4s linear 0s infinite alternate;
+      }
+      & img.railway {
+        top: 170px;
+        left: 485px;
+        animation: railwayScale 5s linear 0s infinite alternate;
+      }
+      .ellipse {
+        position: absolute;
+        top: 140px;
+        left: 355px;
+        width: 200px;
+        height: 450px;
+        & img {
+          position: absolute;
+        }
+      }
+      .ellipse1 {
+         /*background: rgba(0,0,0,0.5);*/
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse2 {
+        // background: rgba(30, 205, 59, 0.5);
+        transform: rotate(90deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse3 {
+        // background: rgba(24, 100, 255, 0.5);
+        transform: rotate(225deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+      .ellipse4 {
+        // background: rgba(40, 176, 255, 0.5);
+        transform: rotate(-45deg);
+        & img {
+          animation: animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate, animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 20s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+        }
+      }
+    }
+    .loginMain {
+      width: 360px !important;
+      height: 400px !important;
+      top: 22%;
+      left: 850px;
+      .login_cont {
+        .lable_cell {
+          width: 280px !important;
+          height: 42px !important;
+          margin: 0px 38px 20px !important;
+          & input {
+            width: 230px !important;
+          }
+          & input[type='text'] {
+            outline: none;
+          }
+          & input[type='password'] {
+            outline: none;
+          }
+          & span.icon {
+            width: 35px;
+            height: 100%;
+            margin-left: 10px;
+            display: block;
+          }
+          & span.icon_user {
+            background: url("../../assets/login/login_icon.png") 8px 9px no-repeat !important;
+          }
+          & span.icon_pwd {
+            background: url("../../assets/login/login_icon.png")  -52px 10px no-repeat !important;
+          }
+        }
+        & input.login_btn {
+          width: 280px !important;
+          margin: 20px 40px 0px !important;
+        }
+        .mychecks {
+          width: 290px !important;
+        }
+      }
+    }
+  }
+}
